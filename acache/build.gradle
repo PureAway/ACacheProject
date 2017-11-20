@@ -10,8 +10,6 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
     buildTypes {
         release {
@@ -23,11 +21,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    testCompile 'junit:junit:4.12'
 }
 ext {
     bintrayRepo = 'maven'////bintray上的仓库名，一般为maven
@@ -39,7 +32,7 @@ ext {
     siteUrl = 'https://github.com/PureAway/ACacheProject'
     gitUrl = 'https://github.com/PureAway/ACacheProject.git'
 
-    libraryVersion = '1.0.2'//版本号
+    libraryVersion = '1.0.3'//版本号
     libraryName = 'acache'//项目名字，没什么用
     libraryDescription = 'A nice tool to save Serializable、String、Bitmap、' +
             'Drawable、JSONObject、JSONArray、byte[] value for Android'
