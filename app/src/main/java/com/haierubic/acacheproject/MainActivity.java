@@ -22,14 +22,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        cache = ACache.get(this);
         setContentView(R.layout.activity_main);
-        edName = (EditText) findViewById(R.id.edName);
-        edAge = (EditText) findViewById(R.id.edAge);
-        edHobby = (EditText) findViewById(R.id.edHobby);
-        btnPut = (Button) findViewById(R.id.btnPut);
-        btnGet = (Button) findViewById(R.id.btnGet);
-        tvShow = (TextView) findViewById(R.id.tvShow);
+        cache = ACache.Companion.get(this);
+        edName = findViewById(R.id.edName);
+        edAge = findViewById(R.id.edAge);
+        edHobby = findViewById(R.id.edHobby);
+        btnPut = findViewById(R.id.btnPut);
+        btnGet = findViewById(R.id.btnGet);
+        tvShow = findViewById(R.id.tvShow);
         btnPut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         user.setAge(Integer.parseInt(edAge.getText().toString().trim()));
         user.setHobby(edHobby.getText().toString().trim());
         // 保存一周
-        cache.put(USER, user, ACache.TIME_DAY * 7);
+        cache.put(USER, user, ACache.Companion.getTIME_DAY() * 7);
     }
 
 

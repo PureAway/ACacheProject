@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ACacheProject.iml" filepath="$PROJECT_DIR$/ACacheProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ACacheProject.iml" filepath="$PROJECT_DIR$/.idea/ACacheProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/ACacheProject.iml" filepath="$PROJECT_DIR$/ACacheProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/acache/acache.iml" filepath="$PROJECT_DIR$/acache/acache.iml" />
-      <module fileurl="file://$PROJECT_DIR$/acache/acache.iml" filepath="$PROJECT_DIR$/acache/acache.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
