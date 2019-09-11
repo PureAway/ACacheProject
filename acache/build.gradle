@@ -1,6 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-android'
 apply plugin: 'com.novoda.bintray-release'
 
 android {
@@ -23,7 +21,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
 
@@ -31,7 +28,7 @@ publish {
     userOrg = 'zcy'
     groupId = 'com.zcy'
     artifactId = 'acache'
-    publishVersion = '1.0.4'
+    publishVersion = '1.0.5'
     desc = 'A nice tool to save Serializable、String、Bitmap、' +
             'Drawable、JSONObject、JSONArray、byte[] value for Android'
     website = 'https://github.com/PureAway/ACacheProject'
